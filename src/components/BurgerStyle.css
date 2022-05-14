@@ -29,3 +29,21 @@
     text-transform: uppercase;
 
 }
+
+.ingrBtns {
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingrBtn {
+    border: 0;
+    background-color: #ca720d;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    display: table;
+    width: 95px;
+
+
+}
