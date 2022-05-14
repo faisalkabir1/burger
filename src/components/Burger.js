@@ -4,10 +4,10 @@ import './BurgerStyle.css';
 
 export default class Burger extends Component {
     state = {
-        Lettuce: 0,
-        Tomato: 0,
-        Cheese: 0,
-        Meat: 0
+        lettuce: 0,
+        tomato: 0,
+        cheese: 0,
+        meat: 0
     }
     render() {
         return (
@@ -17,11 +17,14 @@ export default class Burger extends Component {
 
                 </div>
                 <div className="ingredientsBlock">
-                    <>Lettuce</>
-                    <button className="ingrBtn"> Add </button>
-                    <button className="ingrBtn"> Remove</button>
+                    <p>Lettuce</p>
+                    <div className="ingrBtns">
 
-                </div>
+                        <button onClick={() => this.addRemoveIngredient('add', 'lettuce')} className="ingrBtn"> Add </button>
+                        <button onClick={() => this.addRemoveIngredient('remove', 'lettuce')} className="ingrBtn"> Remove </button>
+
+                    </div>
+                </div >
             </>
         )
     }
