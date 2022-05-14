@@ -17,7 +17,10 @@ export default class Burger extends Component {
 
                 </div>
                 <div className="ingredientsBlock">
-                    ingredients
+                    <>Lettuce</>
+                    <button className="ingrBtn"> Add </button>
+                    <button className="ingrBtn"> Remove</button>
+
                 </div>
             </>
         )
